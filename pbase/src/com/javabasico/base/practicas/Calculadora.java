@@ -1,4 +1,6 @@
 package com.javabasico.base.practicas;
+
+import static com.javabasico.base.practicas.Constantes.SUMA;
 /**
  * Calculadora, se realizan las operaciones básicas mediante metodos estáticos
  * @author MARIA
@@ -13,7 +15,8 @@ public class Calculadora {
 	 */
 	public static void suma(int operando1,int operando2) {
 		int suma = operando1+operando2;
-		System.out.println(Constantes.SUMA+suma);
+		//Aqui ni siquiera indicamos la clase porque tenemos importada la constante
+		System.out.println(SUMA+suma);
 	}
 
 	/**
@@ -22,8 +25,8 @@ public class Calculadora {
 	 * @param operando2
 	 */
 	public static void resta(int operando1,int operando2) {
-		int resta = operando1+operando2;
-		System.out.println("Resta:"+resta);
+		int resta = operando1-operando2;
+		System.out.println("RESTA:"+resta);
 	}
 
 	/**
@@ -32,8 +35,8 @@ public class Calculadora {
 	 * @param operando2
 	 */
 	public static void multiplicacion(int operando1,int operando2) {
-		long multiplicacion = operando1+operando2;
-		System.out.println("Multiplicacion:"+multiplicacion);
+		long multiplicacion = operando1*operando2;
+		System.out.println("MULTIPLICACION"+multiplicacion);
 	}
 
 	/**
@@ -43,9 +46,12 @@ public class Calculadora {
 	 */
 	public static void division(int operando1,int operando2) {
 		double division = operando1/operando2;
-		System.out.println("Division:"+division);
+		System.out.println("DIVISION"+division);
 	}
 	//Añadir un método no estático que realize la suma
+	//NO SE SUELE HACER UNA SOBRECARGA DE METODOS ENTRE ESTATICOS Y NO ESTÁTICOS
+	
+	
 	
 
 }
